@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class AlternativeQuestionAnswer extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'content',
+        'is_correct'
+    ];
 }
