@@ -15,6 +15,8 @@ class CreateAlternativeQuestionAnswersTable extends Migration
     {
         Schema::create('alternative_question_answers', function (Blueprint $table) {
             $table->id();
+            $table->string('content');
+            $table->boolean('is_correct')->default(false);
             $table->timestamps();
         });
     }
