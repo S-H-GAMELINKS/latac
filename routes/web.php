@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('alternative_questions', 'App\Http\Controllers\AlternativeQuestionController');
+Route::resource('alternative_questions/{alternative_question}/alternative_question_answers', 'App\Http\Controllers\AlternativeQuestionAnswerController');
