@@ -17,15 +17,15 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ secure_asset('css/samazon.css')}}" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3723f06c66.js" crossorigin="anonymous"></script>
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
-            <main class="py-4 mb-5">
-                @yield('content')
-            </main>
+            <div class="container">
+                <main class="py-4 mb-5">
+                    @yield('content')
+                </main>
+            </div>
         </div>
     </body>
 </html>
